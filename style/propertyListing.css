@@ -11,6 +11,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 70vh;
+    width: 100vw;
 }
 #landing-container{
     display: flex;
@@ -27,10 +28,19 @@
     font-size: 30px;
 }
 /* Filter */
+#landing-filter{
+    background-color: green;
+    margin: 11%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px black;
+}
 #landing-filter ul{
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
     gap: 20px;
 }
+
+/* Property Listing Section */
