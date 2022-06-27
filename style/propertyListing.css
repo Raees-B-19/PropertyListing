@@ -23,7 +23,7 @@
 #landing-Title{
     color: white;
 }
-#landing-desc{
+.landing-desc{
     color: white;
     font-size: 30px;
 }
@@ -49,4 +49,11 @@
     align-items: center;
     justify-content: center;
     padding: 8%;
+}
+/* Testimonials Section */
+.testimonails-img{
+    border-radius: 50%;
+    height: 42vh;
+    width: 100%;
+    object-fit: cover;
 }
