@@ -50,10 +50,17 @@
     justify-content: center;
     padding: 8%;
 }
-/* Testimonials Section */
-.testimonails-img{
+/* Agent Section */
+#agent-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 50px 0;
+}
+.agent-img{
     border-radius: 50%;
-    height: 42vh;
+    height: 40vh;
     width: 100%;
     object-fit: cover;
 }
