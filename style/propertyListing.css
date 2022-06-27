@@ -44,3 +44,9 @@
 }
 
 /* Property Listing Section */
+#propertyListing-Title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8%;
+}
