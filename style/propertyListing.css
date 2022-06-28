@@ -34,13 +34,17 @@
     border-radius: 10px;
     box-shadow: 3px 3px 3px 3px black;
 }
-#landing-filter ul{
+#landing-filter .row{
     color: white;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    list-style: none;
-    gap: 20px;
+    list-style: none; */
+    /* For gap in col */
+    /* padding: 20px; */
+    /* Move col */
+    /* padding-left and right  */
+
 }
 
 /* Property Listing Section */
@@ -58,6 +62,7 @@
     justify-content: center;
     padding: 0 0 50px 0;
 }
+/* Agent img */
 .agent-img{
     border-radius: 50%;
     height: 40vh;
