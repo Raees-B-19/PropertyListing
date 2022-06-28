@@ -72,3 +72,19 @@ function getProperties(){
     })
 }
 getProperties();
+
+// For Search Button
+// function filterByOption(event) {
+//     console.clear();// To clear the console
+//     switch(event.target.value){
+//         case 'wand': 
+//             console.log(data.filter( e => e.toLowerCase().includes('wand')));
+//         break
+//         case 'rod': 
+//             console.log(data.filter( e => e.toLowerCase().includes('rod')));
+//         break  
+//         case 'other': 
+//             console.log(data.filter( e => !e.toLowerCase().includes('wand') && !e.toLowerCase().includes('rod')));
+//         break  
+//     }
+// }
