@@ -6,7 +6,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/DZXjwpxP/Set1-3.jpg",
+            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
             bed: `<i class="fa-solid fa-bed"> 4 </i>`,
             toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
             price: 10000
@@ -18,7 +18,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/DZXjwpxP/Set1-3.jpg",
+            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
             bed: '<i class="fa-solid fa-bed"> 3</i>',
             toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
             price: 10000
@@ -30,7 +30,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/DZXjwpxP/Set1-3.jpg",
+            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
             bed: '<i class="fa-solid fa-bed"> 2</i>',
             toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
             price: 10000
@@ -42,7 +42,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/DZXjwpxP/Set1-3.jpg",
+            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
             bed: '<i class="fa-solid fa-bed"> 5</i>',
             toilet: `<i class="fa-solid fa-toilet"> 3</i>`,
             price: 10000
@@ -54,7 +54,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/DZXjwpxP/Set1-3.jpg",
+            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
             bed: '<i class="fa-solid fa-bed"> 3</i>',
             toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
             price: 10000
@@ -66,7 +66,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/DZXjwpxP/Set1-3.jpg",
+            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
             bed: '<i class="fa-solid fa-bed"> 3</i>',
             toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
             price: 10000
