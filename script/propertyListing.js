@@ -4,6 +4,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             type: 'Apartment',
             location: 'New York City',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+            bed: `<i class="fa-solid fa-bed"> 4 </i>`,
             price: 10000
         },
         {
@@ -11,6 +12,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             type: 'Apartment',
             location: 'New York City',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+            bed: '<i class="fa-solid fa-bed"> 3</i>',
             price: 10000
         },
         {
@@ -18,6 +20,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             type: 'Apartment',
             location: 'New York City',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+            bed: '<i class="fa-solid fa-bed"> 2</i>',
             price: 10000
         },
         {
@@ -25,6 +28,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             type: 'Apartment',
             location: 'New York City',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+            bed: '<i class="fa-solid fa-bed"> 5</i>',
             price: 10000
         },
         {
@@ -32,6 +36,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             type: 'Apartment',
             location: 'New York City',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+            bed: '<i class="fa-solid fa-bed"> 3</i>',
             price: 10000
         },
         {
@@ -39,6 +44,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             type: 'Apartment',
             location: 'New York City',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+            bed: '',
             price: 10000
         }
     ];
@@ -52,6 +58,7 @@ function getProperties(){
             <img src="${e.url}" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">${e.type} in ${e.location}</h4>
+              <h4 class="card-title">${e.bed}</h4>
               <h5>${e.price}</h5>
             </div>
           </div>
