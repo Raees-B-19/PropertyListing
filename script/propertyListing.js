@@ -59,7 +59,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
 function getProperties(){
     properties.forEach((e) => {
         document.getElementById('properties-row').innerHTML +=
-            `<div class="col-md-3">
+            `<div class="col-md-3 p-3">
             <div class="card" style="width: 18rem;">
             <img src="${e.url}" class="card-img-top" alt="...">
             <div class="card-body">
