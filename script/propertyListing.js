@@ -1,8 +1,8 @@
 let properties = JSON.parse(localStorage.getItem('property')) ?
     JSON.parse(localStorage.getItem('property')) : [{
             id: 1,
-            type: 'House',
-            location: 'NYC',
+            type: 'Apartment',
+            location: 'Parrow',
             url: "https://i.postimg.cc/gjbnktg3/House-3.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
@@ -13,8 +13,8 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         },
         {
             id: 2,
-            type: 'House',
-            location: 'Cape Town',
+            type: 'Apartment',
+            location: 'Vanguard',
             url: "https://i.postimg.cc/dVDjrzVF/House-1.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
@@ -26,7 +26,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         {
             id: 3,
             type: 'Apartment',
-            location: 'NYC',
+            location: 'Vanguard',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
@@ -37,7 +37,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         },
         {
             id: 4,
-            type: 'House',
+            type: 'Apartment',
             location: 'Seapoint',
             url: "https://i.postimg.cc/LXcZg88Y/House-5.png",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
@@ -61,8 +61,8 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         },
         {
             id: 6,
-            type: 'Apartment',
-            location: 'New York City',
+            type: 'House',
+            location: 'Seapoint',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
@@ -73,8 +73,8 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         },
         {
             id: 7,
-            type: 'Apartment',
-            location: 'New York City',
+            type: 'House',
+            location: 'Parrow',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
@@ -85,8 +85,8 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         },
         {
             id: 8,
-            type: 'Apartment',
-            location: 'New York City',
+            type: 'House',
+            location: 'Crawford',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
@@ -97,8 +97,8 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         },
         {
             id: 9,
-            type: 'Apartment',
-            location: 'New York City',
+            type: 'House',
+            location: 'Crawford',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
@@ -109,8 +109,8 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         },
         {
             id: 10,
-            type: 'Apartment',
-            location: 'New York City',
+            type: 'House',
+            location: 'SilverTown',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
@@ -121,8 +121,8 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         },
         {
             id: 11,
-            type: 'Apartment',
-            location: 'New York City',
+            type: 'House',
+            location: 'Crawford',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
@@ -133,8 +133,8 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
         },
         {
             id: 12,
-            type: 'Apartment',
-            location: 'New York City',
+            type: 'House',
+            location: 'Seapoint',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
             url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
