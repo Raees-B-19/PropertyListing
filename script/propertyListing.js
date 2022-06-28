@@ -1,5 +1,5 @@
 let properties = JSON.parse(localStorage.getItem('property')) ?
-    JSON.parse(localStorage.getItem('property')) : [{
+    JSON.parse(localStorage.getItem('property')) :  [{
             id: 1,
             type: 'Apartment',
             location: 'Parrow',
@@ -144,6 +144,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             price:11500
         }
     ];
+console.log(properties)
 
 
 function getProperties(){
@@ -224,3 +225,21 @@ getProperties();
 //         break  
 //     }
 // }
+
+// Localstorage test
+    //     let property = [{
+    //         id: 1,
+    //         type: 'Apartment',
+    //         location: 'Parrow',
+    //         url: "https://i.postimg.cc/gjbnktg3/House-3.jpg",
+    //         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+    //         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+    //         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+    //         bed: `<i class="fa-solid fa-bed"> 4 </i>`,
+    //         toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+    //         price:12000
+    //     }]
+        
+
+    // localStorage.setItem('property',JSON.stringify(property))
+    // console.log(localStorage)
