@@ -19,6 +19,27 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
             location: 'New York City',
             url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
             price: 10000
+        },
+        {
+            id: 4,
+            type: 'Apartment',
+            location: 'New York City',
+            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+            price: 10000
+        },
+        {
+            id: 5,
+            type: 'Apartment',
+            location: 'New York City',
+            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+            price: 10000
+        },
+        {
+            id: 6,
+            type: 'Apartment',
+            location: 'New York City',
+            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+            price: 10000
         }
     ];
 
@@ -26,7 +47,7 @@ let properties = JSON.parse(localStorage.getItem('property')) ?
 function getProperties(){
     properties.forEach((e) => {
         document.getElementById('properties-row').innerHTML +=
-            `<div class="col-md-4">
+            `<div class="col-md-3">
             <div class="card" style="width: 18rem;">
             <img src="${e.url}" class="card-img-top" alt="...">
             <div class="card-body">
