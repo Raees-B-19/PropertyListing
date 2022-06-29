@@ -7,8 +7,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: `<i class="fa-solid fa-bed"> 4 </i>`,
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 4,
+        toilet: 2,
         price:12000
     },
     {
@@ -19,8 +19,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 3</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 3,
+        toilet: 2,
         price:11000
     },
     {
@@ -31,8 +31,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 2</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 2,
+        toilet: 2,
         price:9500
     },
     {
@@ -43,8 +43,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 5</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 3</i>`,
+        bed: 5,
+        toilet: 3,
         price:16000
     },
     {
@@ -55,8 +55,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 3</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 3,
+        toilet: 2,
         price:12000
     },
     {
@@ -67,8 +67,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 3</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 3,
+        toilet: 1,
         price:11500
     },
     {
@@ -79,8 +79,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 3</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 3,
+        toilet: 2,
         price:11500
     },
     {
@@ -91,8 +91,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 3</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 3,
+        toilet: 2,
         price:11500
     },
     {
@@ -103,8 +103,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 3</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 3,
+        toilet: 2,
         price:11500
     },
     {
@@ -115,8 +115,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 3</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 3,
+        toilet: 2,
         price:11500
     },
     {
@@ -127,8 +127,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 3</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 3,
+        toilet: 2,
         price:11500
     },
     {
@@ -139,8 +139,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: '<i class="fa-solid fa-bed"> 3</i>',
-        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        bed: 3,
+        toilet: 2,
         price:11500
     }
 ]));
@@ -148,15 +148,16 @@ localStorage.setItem('property',JSON.stringify(properties = [{
 // console.log(localStorage.removeItem('property'))
 
 
-function getProperties(){
-    properties.forEach((property,index) => {
+function getProperties(prop){
+    document.getElementById('properties-row').innerHTML = '';
+    prop.forEach((property,index) => {
         document.getElementById('properties-row').innerHTML +=
             `<div class="col-md-3 p-3">
             <div class="card" style="width: 18rem;">
             <img src="${property.url}" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">${property.type} in ${property.location}</h4>
-              <h4 class="card-title">${property.bed} ${property.toilet}</h4>
+              <h4 class="card-title"><i class="fa-solid fa-bed">${property.bed}</i> <i class="fa-solid fa-toilet">${property.toilet}</i></h4>
               <h5>R ${property.price}</h5>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${index}" onclick="modalProperties()">
                 View Property
@@ -208,39 +209,18 @@ function getProperties(){
             </div>`
     })
 }
-getProperties();
+getProperties(properties);
 
 
 // For Search Button
-// function filterByOption(event) {
-//     console.clear();// To clear the console
-//     switch(event.target.value){
-//         case 'wand': 
-//             console.log(data.filter( e => e.toLowerCase().includes('wand')));
-//         break
-//         case 'rod': 
-//             console.log(data.filter( e => e.toLowerCase().includes('rod')));
-//         break  
-//         case 'other': 
-//             console.log(data.filter( e => !e.toLowerCase().includes('wand') && !e.toLowerCase().includes('rod')));
-//         break  
-//     }
-// }
-
-// Localstorage test
-    //     let property = [{
-    //         id: 1,
-    //         type: 'Apartment',
-    //         location: 'Parrow',
-    //         url: "https://i.postimg.cc/gjbnktg3/House-3.jpg",
-    //         url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-    //         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-    //         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-    //         bed: `<i class="fa-solid fa-bed"> 4 </i>`,
-    //         toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-    //         price:12000
-    //     }]
-        
+function toilet(event){
+    console.log(properties);
+    let newToilets = properties.filter(property => {
+        return property.toilet <= event.target.value
+    })
+    getProperties(newToilets)
+}
+document.querySelector('#property-toilets').addEventListener('change',toilet);
 
     // localStorage.setItem('property',JSON.stringify(property))
     // console.log(localStorage)
