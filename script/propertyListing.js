@@ -1,150 +1,151 @@
-let properties = JSON.parse(localStorage.getItem('property')) ?
-    JSON.parse(localStorage.getItem('property')) :  [{
-            id: 1,
-            type: 'Apartment',
-            location: 'Parrow',
-            url: "https://i.postimg.cc/gjbnktg3/House-3.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: `<i class="fa-solid fa-bed"> 4 </i>`,
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:12000
-        },
-        {
-            id: 2,
-            type: 'Apartment',
-            location: 'Vanguard',
-            url: "https://i.postimg.cc/dVDjrzVF/House-1.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 3</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:11000
-        },
-        {
-            id: 3,
-            type: 'Apartment',
-            location: 'Vanguard',
-            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 2</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:9500
-        },
-        {
-            id: 4,
-            type: 'Apartment',
-            location: 'Seapoint',
-            url: "https://i.postimg.cc/LXcZg88Y/House-5.png",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 5</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 3</i>`,
-            price:16000
-        },
-        {
-            id: 5,
-            type: 'House',
-            location: 'Parrow',
-            url: "https://i.postimg.cc/NF6BNJGf/House-2.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 3</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:12000
-        },
-        {
-            id: 6,
-            type: 'House',
-            location: 'Seapoint',
-            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 3</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:11500
-        },
-        {
-            id: 7,
-            type: 'House',
-            location: 'Parrow',
-            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 3</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:11500
-        },
-        {
-            id: 8,
-            type: 'House',
-            location: 'Crawford',
-            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 3</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:11500
-        },
-        {
-            id: 9,
-            type: 'House',
-            location: 'Crawford',
-            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 3</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:11500
-        },
-        {
-            id: 10,
-            type: 'House',
-            location: 'SilverTown',
-            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 3</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:11500
-        },
-        {
-            id: 11,
-            type: 'House',
-            location: 'Crawford',
-            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 3</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:11500
-        },
-        {
-            id: 12,
-            type: 'House',
-            location: 'Seapoint',
-            url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-            bed: '<i class="fa-solid fa-bed"> 3</i>',
-            toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
-            price:11500
-        }
-    ];
-console.log(properties)
+// let properties = JSON.parse(localStorage.getItem('property')) ?JSON.parse(localStorage.getItem('property')) :
+localStorage.setItem('property',JSON.stringify(properties = [{
+        id: 1,
+        type: 'Apartment',
+        location: 'Parrow',
+        url: "https://i.postimg.cc/gjbnktg3/House-3.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: `<i class="fa-solid fa-bed"> 4 </i>`,
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:12000
+    },
+    {
+        id: 2,
+        type: 'Apartment',
+        location: 'Vanguard',
+        url: "https://i.postimg.cc/dVDjrzVF/House-1.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 3</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:11000
+    },
+    {
+        id: 3,
+        type: 'Apartment',
+        location: 'Vanguard',
+        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 2</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:9500
+    },
+    {
+        id: 4,
+        type: 'Apartment',
+        location: 'Seapoint',
+        url: "https://i.postimg.cc/LXcZg88Y/House-5.png",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 5</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 3</i>`,
+        price:16000
+    },
+    {
+        id: 5,
+        type: 'House',
+        location: 'Parrow',
+        url: "https://i.postimg.cc/NF6BNJGf/House-2.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 3</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:12000
+    },
+    {
+        id: 6,
+        type: 'House',
+        location: 'Seapoint',
+        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 3</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:11500
+    },
+    {
+        id: 7,
+        type: 'House',
+        location: 'Parrow',
+        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 3</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:11500
+    },
+    {
+        id: 8,
+        type: 'House',
+        location: 'Crawford',
+        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 3</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:11500
+    },
+    {
+        id: 9,
+        type: 'House',
+        location: 'Crawford',
+        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 3</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:11500
+    },
+    {
+        id: 10,
+        type: 'House',
+        location: 'SilverTown',
+        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 3</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:11500
+    },
+    {
+        id: 11,
+        type: 'House',
+        location: 'Crawford',
+        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 3</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:11500
+    },
+    {
+        id: 12,
+        type: 'House',
+        location: 'Seapoint',
+        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
+        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        bed: '<i class="fa-solid fa-bed"> 3</i>',
+        toilet: `<i class="fa-solid fa-toilet"> 2</i>`,
+        price:11500
+    }
+]));
+// console.log(JSON.parse(localStorage.getItem('property')))
+// console.log(localStorage.removeItem('property'))
 
 
 function getProperties(){
