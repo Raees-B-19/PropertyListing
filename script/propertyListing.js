@@ -150,12 +150,12 @@ localStorage.setItem('property',JSON.stringify(properties = [{
 // console.log(JSON.parse(localStorage.getItem('property')))
 // console.log(localStorage.removeItem('property'))
 
-
 function getProperties(prop){
     document.getElementById('properties-row').innerHTML = '';
     prop.forEach((property,index) => {
         document.getElementById('properties-row').innerHTML +=
-            `<div class="col-md-3 p-3">
+            `
+            <div class="col-md-3 p-3">
             <div class="card" style="width: 18rem;">
             <img src="${property.url}" class="card-img-top" alt="...">
             <div class="card-body">
