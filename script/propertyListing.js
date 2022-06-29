@@ -9,7 +9,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 4,
         toilet: 2,
-        price:15000
+        price:15000,
+        for: 'Sale'
     },
     {
         id: 2,
@@ -57,7 +58,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 2,
-        price:10000000
+        price:10000000,
+        for: 'Sale'
     },
     {
         id: 6,
@@ -69,7 +71,8 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 1,
-        price:10000000
+        price:10000000,
+        for: 'Sale'
     },
     {
         id: 7,
