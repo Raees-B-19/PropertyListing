@@ -9,7 +9,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 4,
         toilet: 2,
-        price:12000
+        price:15000
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 2,
-        price:11000
+        price:15000
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 2,
         toilet: 2,
-        price:9500
+        price:70000
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 5,
         toilet: 3,
-        price:16000
+        price:70000
     },
     {
         id: 5,
@@ -57,7 +57,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 2,
-        price:12000
+        price:10000000
     },
     {
         id: 6,
@@ -69,7 +69,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 1,
-        price:11500
+        price:10000000
     },
     {
         id: 7,
@@ -81,7 +81,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 2,
-        price:11500
+        price:100000000
     },
     {
         id: 8,
@@ -93,7 +93,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 2,
-        price:11500
+        price:10000000
     },
     {
         id: 9,
@@ -105,7 +105,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 2,
-        price:11500
+        price:100000000
     },
     {
         id: 10,
@@ -117,7 +117,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 2,
-        price:11500
+        price:10000000
     },
     {
         id: 11,
@@ -129,7 +129,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 2,
-        price:11500
+        price:100000000
     },
     {
         id: 12,
@@ -141,7 +141,7 @@ localStorage.setItem('property',JSON.stringify(properties = [{
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
         toilet: 2,
-        price:11500
+        price:10000000
     }
 ]));
 // console.log(JSON.parse(localStorage.getItem('property')))
@@ -212,15 +212,37 @@ function getProperties(prop){
 getProperties(properties);
 
 
-// For Search Button
+// For  ToiletSearch
 function toilet(event){
-    console.log(properties);
+    // console.log(properties);
     let newToilets = properties.filter(property => {
         return property.toilet <= event.target.value
     })
     getProperties(newToilets)
 }
+
+// For Room Search
+function room(event){
+    // console.log(properties);
+    let newRooms = properties.filter(property => {
+        return property.bed <= event.target.value
+    })
+    getProperties(newRooms)
+}
+
+// For Buget Search
+function budget(event){
+    // console.log(properties);
+    let newBudget = properties.filter(property => {
+        return property.price == event.target.value
+    })
+    getProperties(newBudget)
+}
+
 document.querySelector('#property-toilets').addEventListener('change',toilet);
+document.querySelector('#property-rooms').addEventListener('change',room);
+document.querySelector('#property-budget').addEventListener('change',budget);
+
 
     // localStorage.setItem('property',JSON.stringify(property))
     // console.log(localStorage)
