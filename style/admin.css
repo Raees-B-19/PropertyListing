@@ -25,6 +25,10 @@ ul{
     justify-content: center;
     gap: 50px;
 }
+/* Modal */
+#exampleModal{
+    color: black;
+}
 .fa-solid, .fas{
     color: white;
 }

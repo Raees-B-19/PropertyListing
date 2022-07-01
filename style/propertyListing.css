@@ -92,11 +92,13 @@
     object-fit: cover;
     object-position: 0 -1px;
 }
+#agent .card{
+    background: transparent;
+}
 .card-height{
-    border-radius: 10%;
-    height: 466px;
+    /* height: 466px; */
     margin-bottom: 25px;
-    color: black;
+    color: white;
 
 }
 select{
