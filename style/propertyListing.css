@@ -205,3 +205,26 @@ option{
         object-position: 0 -1px;
     }
 }
+@media screen and (min-width:424px) and (max-width:426px) {
+    #properties-row {
+        margin: 0 0 0 0px;
+    }
+    #landing-filter {
+        margin: 17% 10% 0 10%;
+    }
+    #name{
+        margin-left: 100px;
+    }
+    #email{
+        margin-left: 100px;
+    }
+    .form-label{
+        margin-left: 100px;
+    }
+    #Submit{
+        margin-left: 180px;
+    }
+    #exampleFormControlTextarea1 {
+        width: 275px;
+    }
+}
