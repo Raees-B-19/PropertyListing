@@ -1,9 +1,13 @@
 
+body{
+    background: rgb(12 48 72);
+    color: white;
+}
 h1{
     text-align: center;
 }
 table ,th ,td {
-    border: 1px solid black;
+    border: 1px solid white ;
     border-radius: 5px;
     text-align: center;
     padding: 10px;
@@ -13,12 +17,6 @@ table{
     border-radius:6px;
     border-collapse:separate;
     overflow-x: hidden;
-    background: linear-gradient(
-        rgba(23, 67, 212, 0.5),
-        rgba(199, 211, 35, 0.5),
-        rgba(223, 192, 20, 0.5),
-        rgba(20, 132, 223, 0.5),
-        );;
 }
 ul{
     display: flex;
@@ -27,6 +25,12 @@ ul{
     justify-content: center;
     gap: 50px;
 }
+.fa-solid, .fas{
+    color: white;
+}
+.bi-pencil-square::before{
+    color: white;
+}
 #property-link{
-    color: black;
+    color: white;
 }
