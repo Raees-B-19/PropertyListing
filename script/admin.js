@@ -1,9 +1,9 @@
 let properties = JSON.parse(localStorage.getItem('property'))
 // console.log(JSON.parse(localStorage.getItem('property')))
-function tableData() {
+function tableData(prop) {
     let tb = document.getElementById('table-body');
     tb.innerHTML = '';
-    properties.forEach((td, index) => {
+    prop.forEach((td, index) => {
         tb.innerHTML += `
             <tr>
                 <td scope="row">${td.id}</td>
@@ -55,7 +55,7 @@ function tableData() {
         `
     })
 }
-tableData();
+tableData(properties);
 
 function edit(id) {
     // UPDATE
@@ -94,23 +94,23 @@ function remove(id) {
 function type(event){
     // console.log(properties);
     if (event.target.value === 'All') {
-        return getProperties(properties)
+        return tableData(properties)
       }
     let newType = properties.filter(property => {
         return property.type <= event.target.value
     })
-    getProperties(newType)
+    tableData(newType)
 }
 // For  Location
 function locations(event){
     // console.log(properties);
     if (event.target.value === 'All') {
-        return getProperties (properties)
+        return tableData (properties)
       }
     let newLocation = properties.filter(property => {
         return property.location <= event.target.value
     })
-    getProperties(newLocation)
+    tableData(newLocation)
 }
 document.querySelector('#property-location').addEventListener('change',locations);
 document.querySelector('#property-type').addEventListener('change',type);
