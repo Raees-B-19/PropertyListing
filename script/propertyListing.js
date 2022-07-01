@@ -10,7 +10,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 4,
-        toilet: 2,
+        bathroom: 2,
         price:15000,
         for: 'Sale'
     },
@@ -23,7 +23,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
-        toilet: 2,
+        bathroom: 2,
         price:15000
     },
     {
@@ -35,7 +35,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 2,
-        toilet: 2,
+        bathroom: 2,
         price:70000
     },
     {
@@ -47,7 +47,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 5,
-        toilet: 3,
+        bathroom: 3,
         price:70000
     },
     {
@@ -59,7 +59,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
-        toilet: 2,
+        bathroom: 2,
         price:10000000,
         for: 'Sale'
     },
@@ -72,7 +72,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
-        toilet: 1,
+        bathroom: 1,
         price:10000000,
         for: 'Sale'
     },
@@ -85,7 +85,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
-        toilet: 2,
+        bathroom: 2,
         price:100000000
     },
     {
@@ -97,7 +97,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
-        toilet: 2,
+        bathroom: 2,
         price:10000000
     },
     {
@@ -109,7 +109,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
-        toilet: 2,
+        bathroom: 2,
         price:100000000
     },
     {
@@ -121,7 +121,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
-        toilet: 2,
+        bathroom: 2,
         price:10000000
     },
     {
@@ -133,7 +133,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
-        toilet: 2,
+        bathroom: 2,
         price:100000000
     },
     {
@@ -145,7 +145,7 @@ localStorage.setItem('property',JSON.stringify([{
         url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
         url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
         bed: 3,
-        toilet: 2,
+        bathroom: 2,
         price:10000000
     }
 ]));
@@ -162,7 +162,7 @@ function getProperties(prop){
             <img src="${property.url}" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">${property.type} in ${property.location}</h4>
-              <h4 class="card-title"><i class="fa-solid fa-bed">${property.bed}</i> <i class="fa-solid fa-toilet">${property.toilet}</i></h4>
+              <h4 class="card-title"><i class="fa-solid fa-bed">${property.bed}</i><i class="fa-solid fa-bath">${property.bathroom}</i></h4>
               <h5>R ${property.price}</h5>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${index}" onclick="modalProperties()">
                 View Property

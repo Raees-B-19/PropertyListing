@@ -1,6 +1,5 @@
 let properties = JSON.parse(localStorage.getItem('property'))
 // console.log(JSON.parse(localStorage.getItem('property')))
-
 function tableData() {
     let tb = document.getElementById('table-body');
     tb.innerHTML = '';
@@ -12,12 +11,12 @@ function tableData() {
                 <td>${td.type}</td>
                 <td>${td.location}</td>
                 <td>${td.bed}</td>
-                <td>${td.toilet}</td>
+                <td>${td.bathroom}</td>
                 <td>${td.price}</td>
                 <!-- Button trigger modal -->
                 <td>
                 <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal${index}">
-                <i class="bi bi-pencil-square" onclick="edit(${td.id})"></i></td>
+                <i class="bi bi-pencil-square"></i></td>
                 </a>
                 <td><i class="bi bi-trash" onclick="remove(${index})"></i></td>
                 </tr>
@@ -34,19 +33,19 @@ function tableData() {
                     </div>
                     <div class="modal-body">
                     <h6>Type of Property</h6>
-                    <input value="${td.type}" id="pType">
+                    <input value="${td.type}" id="pType${index}">
                     <h6>Type of Location</h6>
-                    <input value="${td.location}" id="pLocation">
+                    <input value="${td.location}" id="pLocation${index}">
                     <h6>Amount of Beds</h6>
-                    <input value="${td.bed}" id="pBed">
+                    <input value="${td.bed}" id="pBed${index}">
                     <h6>Amount of Toilets</h6>
-                    <input value="${td.toilet}" id="pToilet">
+                    <input value="${td.bathroom}" id="pToilet${index}">
                     <h6>Property Price</h6>
-                    <input value="${td.price}" id="pPrice">
+                    <input value="${td.price}" id="pPrice${index}">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="edit(${index})">Save changes</button>
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-primary" onclick="edit(${index})">Save changes</button>
                     </div>
                     </div>
                 </div>
@@ -65,24 +64,19 @@ function edit(id) {
     // UPDATE
     console.log("Im being clicked");
     // variables for edited values
-    let etype = document.getElementById(`editType${id}`).value;
-    let elocation = document.getElementById(`editLocation${id}`).value;
-    let eaddress = document.getElementById(`editTitle${id}`).value;
-    let epicture = document.getElementById(`editPic${id}`).value;
-    let ebedrooms = document.getElementById(`editRooms${id}`).value;
-    let ebathrooms = document.getElementById(`editBath${id}`).value;
-    let egarage = document.getElementById(`editGarage${id}`).value;
-    let eprice = document.getElementById(`editPrice${id}`).value;
+    let pType = document.getElementById(`pType${id}`).value;
+    let pLocation = document.getElementById(`pLocation${id}`).value;
+    let pBed = document.getElementById(`pBed${id}`).value;
+    let pBathrooms = document.getElementById(`pToilet${id}`).value;
+    let pPrice = document.getElementById(`pPrice${id}`).value;
     // passing edited values into array
-      properties[id].type = etype
-      properties[id].location = elocation
-      properties[id].address = eaddress
-      properties[id].picture = epicture
-      properties[id].bedrooms = parseInt(ebedrooms)
-      properties[id].bathrooms = parseInt(ebathrooms)
-      properties[id].garage = parseInt(egarage)
-      properties[id].price = parseInt(eprice)
-      localStorage.setItem("property", JSON.stringify(properties));
+      properties[id].type = pType
+      properties[id].location = pLocation
+      properties[id].bed = parseInt(pBed)
+      properties[id].bathroom = parseInt(pBathrooms)
+      properties[id].price = parseInt(pPrice)
+    //   Save it to localStorage
+      localStorage.setItem('property', JSON.stringify(properties));
     // Calling Function
     tableData();
 };
