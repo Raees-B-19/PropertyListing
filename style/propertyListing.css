@@ -147,3 +147,23 @@ option{
     text-align: center;
     padding: 20px;
 }
+@media screen and (min-width:1023px) and (max-width:1025px) {
+    #properties-row {
+        margin: 0 0 0 0px;
+    }
+    #landing-filter {
+        margin: 17% 10% 0 10%;
+    }
+    #name{
+        margin-left: 385px;
+    }
+    #email{
+        margin-left: 385px;
+    }
+    .form-label{
+        margin-left: 385px;
+    }
+    #Submit{
+        margin-left: 465px;
+    }
+}
