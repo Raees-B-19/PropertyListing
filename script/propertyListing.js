@@ -1,5 +1,7 @@
 // let properties = JSON.parse(localStorage.getItem('property')) ?JSON.parse(localStorage.getItem('property')) :
-localStorage.setItem('property',JSON.stringify(properties = [{
+let properties = JSON.parse(localStorage.getItem('property'))?
+JSON.parse(localStorage.getItem('property')):
+localStorage.setItem('property',JSON.stringify([{
         id: 1,
         type: 'Apartment',
         location: 'Parrow',
@@ -156,7 +158,7 @@ function getProperties(prop){
         document.getElementById('properties-row').innerHTML +=
             `
             <div class="col-md-3 p-3">
-            <div class="card" style="width: 18rem;">
+            <div class="card card-property-height" style="width: 18rem;">
             <img src="${property.url}" class="card-img-top" alt="...">
             <div class="card-body">
               <h4 class="card-title">${property.type} in ${property.location}</h4>

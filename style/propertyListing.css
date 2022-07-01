@@ -61,9 +61,9 @@
     box-shadow: 3px 3px 10px 1px black;
     /* transition: 0.3s linear; */
 }
-/* .card:hover{
-    transform: scale(1.07);
-} */
+.card-property-height{
+    height: ;
+}
 /* Agent Section */
 #agent-heading{
     display: flex;
