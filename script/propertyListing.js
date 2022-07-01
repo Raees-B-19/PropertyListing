@@ -1,6 +1,6 @@
-// let properties = JSON.parse(localStorage.getItem('property')) ?JSON.parse(localStorage.getItem('property')) :
-let properties = JSON.parse(localStorage.getItem('property'))?
-JSON.parse(localStorage.getItem('property')):
+
+let properties = JSON.parse(localStorage.getItem('property')) ?
+JSON.parse(localStorage.getItem('property')) :
 localStorage.setItem('property',JSON.stringify([{
         id: 1,
         type: 'Apartment',
@@ -216,19 +216,6 @@ function getProperties(prop){
 }
 getProperties(properties);
 
-
-// For  ToiletSearch
-function toilet(event){
-    // console.log(properties);
-    if (event.target.value === 'All') {
-        return getProperties (properties)
-      }
-    let newToilets = properties.filter(property => {
-        return property.toilet <= event.target.value
-    })
-    getProperties(newToilets)
-}
-
 // For Room Search
 function room(event){
     // console.log(properties);
@@ -240,7 +227,28 @@ function room(event){
     })
     getProperties(newRooms)
 }
-
+// For Bathrooms
+function toilet(event){
+    // console.log(properties);
+    if (event.target.value === 'All') {
+        return getProperties (properties)
+      }
+    let newToilets = properties.filter(property => {
+        return property.toilet <= event.target.value
+    })
+    getProperties(newToilets)
+}
+// For  Location
+function locations(event){
+    // console.log(properties);
+    if (event.target.value === 'All') {
+        return getProperties (properties)
+      }
+    let newLocation = properties.filter(property => {
+        return property.location <= event.target.value
+    })
+    getProperties(newLocation)
+}
 // For Buget Search
 function budget(event){
     // console.log(properties);
@@ -255,6 +263,7 @@ function budget(event){
 
 document.querySelector('#property-toilets').addEventListener('change',toilet);
 document.querySelector('#property-rooms').addEventListener('change',room);
+document.querySelector('#property-location').addEventListener('change',locations);
 document.querySelector('#property-budget').addEventListener('change',budget);
 
 document.getElementById('relaod-btn').addEventListener('click',() => {

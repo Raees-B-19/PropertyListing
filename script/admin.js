@@ -40,7 +40,7 @@ function tableData() {
                 <h6>Amount of Beds</h6>
                 <input value="${td.bed}" id="pBed${index}">
                 <h6>Amount of Bathrooms</h6>
-                <input value="${td.bathrooms}" id="pToilet${index}">
+                <input value="${td.bathrooms}" id="pBathrooms${index}">
                 <h6>Property Price</h6>
                 <input value="${td.price}" id="pPrice${index}">
                 </div>
@@ -64,13 +64,13 @@ function edit(id) {
     let pType = document.getElementById(`pType${id}`).value;
     let pLocation = document.getElementById(`pLocation${id}`).value;
     let pBed = document.getElementById(`pBed${id}`).value;
-    let pBathrooms = document.getElementById(`pToilet${id}`).value;
+    let pBathrooms = document.getElementById(`pBathrooms${id}`).value;
     let pPrice = document.getElementById(`pPrice${id}`).value;
     // passing edited values into array
       properties[id].type = pType
       properties[id].location = pLocation
       properties[id].bed = parseInt(pBed)
-      properties[id].bathroom = parseInt(pBathrooms)
+      properties[id].bathrooms = parseInt(pBathrooms)
       properties[id].price = parseInt(pPrice)
     //   Save it to localStorage
       localStorage.setItem('property', JSON.stringify(properties));
