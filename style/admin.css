@@ -23,7 +23,7 @@ ul{
     list-style: none;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 35px;
 }
 /* Modal */
 #exampleModal{
