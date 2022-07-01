@@ -86,8 +86,10 @@
     height: 40vh;
     width: 100%;
     object-fit: cover;
+    object-position: 0 -1px;
 }
 .card-height{
+    border-radius: 10%;
     height: 466px;
     margin-bottom: 25px;
     color: black;
@@ -98,6 +100,26 @@ select{
 }
 option{
     color: black;
+}
+/* Contact Form */
+#contact h2{
+    text-align: center;
+}
+#email{
+    margin-left: 700px;
+}
+#email>input{
+    background: rgb(12 48 72);
+    color: white;
+}
+.form-label{
+    margin-left: 700px;
+}
+#exampleFormControlTextarea1{
+    width: 500px;
+    margin: auto;
+    background: rgb(12 48 72);
+    color: white;
 }
 #footer{
     background: rgb(12 48 72);
