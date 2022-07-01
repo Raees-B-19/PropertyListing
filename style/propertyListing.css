@@ -4,7 +4,9 @@
 }
 /* Landing */
 #landing{
-    background-image: url(https://i.postimg.cc/SRR374jM/background.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    /* background-image: url(https://i.postimg.cc/SRR374jM/background.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
+    /* background-image: url(https://i.postimg.cc/9FcpYmz5/bg-2.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
+    background-image: url(https://i.postimg.cc/Wzfpfpmp/bg-3.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
@@ -27,29 +29,29 @@
     padding: 0 0 1% 0 ;
 
 }
+.admin-btn a{
+    color: white;
+}
 /* Filter */
 #landing-filter{
-    background-color: green;
+    background-color: rgb(12 48 72);
     margin: 11% 10% 0 10%;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px 3px black;
+
 }
 #landing-filter .row{
     color: white;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none; */
-    /* For gap in col */
-    /* padding: 20px; */
-    /* Move col */
-    /* padding-left and right  */
-
 }
 
 /* Property Listing Section */
+#propertyListing{
+    /* background-color: rgb(12 48 72); */
+    /* border: 10px solid rgb(114 103 63); */
+    border: 10px solid rgb(12 48 72);
+}
 #propertyListing-Title{
     text-align: center;
+    color: white;
     padding: 6% 0 0 0;
 }
 #propertyListing-Title2{
@@ -60,13 +62,17 @@
     margin: 0 0 0 35px;
 }
 .card{
-    box-shadow: 3px 3px 10px 1px black;
-    /* transition: 0.3s linear; */
+    box-shadow: 1px 3px 10px 10px rgb(12 48 72);
 }
 .card-property-height{
     height: 400px;
+    margin-bottom: 5px;
 }
 /* Agent Section */
+#agent{
+    background: rgb(12 48 72);
+    color: white;
+}
 #agent-heading{
     display: flex;
     flex-direction: column;
@@ -82,11 +88,18 @@
     object-fit: cover;
 }
 .card-height{
-    height: 566px;
+    height: 466px;
+    margin-bottom: 25px;
+    color: black;
+
 }
 select{
     color: grey;
 }
 option{
     color: black;
+}
+#footer{
+    background: rgb(12 48 72);
+    color: white;
 }

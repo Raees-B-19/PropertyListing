@@ -112,9 +112,13 @@
                   <option value="100000000">R100000000</option>
                 </select>
                 </div>
-                  <button id="admin-btn" class="col-md-2">
-                    <a href="./admin.html" target="_blank">Admin Page</a>
-                  </button>
+                  <div class="col-md-2 admin-btn">
+                    <h3>Admin Page
+                    <a href="./admin.html" target="_blank">
+                      <i class="fa-solid fa-file"></i>
+                    </a>
+                    </h3>
+                  </div>
                   <!-- <button id="search-btn" class="col-md-2">Search</button> -->
             </div>
           </div>
@@ -183,30 +187,23 @@
     <!-- Contact -->
     <section id="contact">
       <form action="">
-
+        <h2>Contact Us</h2>
+      <form action="">
+        <label for="email">Email :</label>
+        <input type="text" placeholder="email@gmail.com" required>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Give us Feedback</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
       </form>
     </section>
 
     <!-- Footer -->
     <section id="footer">
-      <h2>Contact Us</h2>
-      <div class="mb-3 row">
-        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-10">
-          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword">
-        </div>
-      </div>
-      <form action="">
-        <input type="text">
-        <button>Submit</button>
-      </form>
-      &copy CopyRight Ra'ees Benny new Data()</section>
+      &copy CopyRight Ra'ees Benny new Data()
+    </section>
 
     <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>

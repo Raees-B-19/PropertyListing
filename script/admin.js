@@ -126,15 +126,15 @@ function type(event){
     tableData(newType)
 }
 // For  Location
-function locations(event){
+function price(event){
     // console.log(properties);
     if (event.target.value === 'All') {
         return tableData (properties)
       }
-    let newLocation = properties.filter(property => {
-        return property.location <= event.target.value
+    let newPrice = properties.filter(property => {
+        return property.price <= event.target.value
     })
-    tableData(newLocation)
+    tableData(newPrice)
 }
-document.querySelector('#property-location').addEventListener('change',locations);
 document.querySelector('#property-type').addEventListener('change',type);
+document.querySelector('#property-budget').addEventListener('change',price);

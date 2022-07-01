@@ -18,7 +18,7 @@
     <h1>Admin Table</h1>
     <ul>
         <li>
-            <h3>Type</h3>
+            <h2>Type</h2>
             <select name="type" id="property-type">
                 <option value="" disabled selected hidden>Type</option>
                 <option value="All">All</option>
@@ -27,23 +27,22 @@
             </select>
         </li>
         <li>
-            <h3>Location</h3>
-            <select name="rooms" id="property-location">
-                <option value="" disabled selected hidden>Location</option>
+            <h2>Price</h2>
+            <select name="rooms" id="property-budget">
+                <option value="" disabled selected hidden>Budget</option>
                 <option value="All">All</option>
-                <option value="Crawford">Crawford</option>
-                <option value="Parrow">Parrow</option>
-                <option value="Vanguard">Vanguard</option>
-                <option value="Seapoint">Seapoint</option>
-                <option value="SilverTown">SilverTown</option>
-                <option value="Seapoint">Seapoint</option>
-            </select>
+                <option value="15000">R15,000</option>
+                <option value="70000">R70,000</option>
+                <option value="500000">R500,000</option>
+                <option value="100000000">R100,000,000</option>
+              </select>
         </li>
         <li>
-            Add property
+            <h2>Add property
             <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <i class="fa-solid fa-plus"></i>
             </a>
+        </h2>
         </li>
         <li>
             <h2>Property List (click house)
@@ -102,8 +101,8 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="addProperty()">Save changes</button>
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-primary" onclick="addProperty()" data-bs-dismiss="modal">Save changes</button>
             </div>
             </div>
         </div>

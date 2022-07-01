@@ -1,3 +1,4 @@
+
 h1{
     text-align: center;
 }
@@ -12,6 +13,19 @@ table{
     border-radius:6px;
     border-collapse:separate;
     overflow-x: hidden;
+    background: linear-gradient(
+        rgba(23, 67, 212, 0.5),
+        rgba(199, 211, 35, 0.5),
+        rgba(223, 192, 20, 0.5),
+        rgba(20, 132, 223, 0.5),
+        );;
+}
+ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
 }
 #property-link{
     color: black;
