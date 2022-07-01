@@ -79,6 +79,9 @@
     width: 100%;
     object-fit: cover;
 }
+.card-height{
+    height: 566px;
+}
 select{
     color: grey;
 }
