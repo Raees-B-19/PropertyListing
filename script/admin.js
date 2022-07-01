@@ -89,3 +89,28 @@ function remove(id) {
     }
     tableData();
 };
+
+// For Type Search
+function type(event){
+    // console.log(properties);
+    if (event.target.value === 'All') {
+        return getProperties(properties)
+      }
+    let newType = properties.filter(property => {
+        return property.type <= event.target.value
+    })
+    getProperties(newType)
+}
+// For  Location
+function locations(event){
+    // console.log(properties);
+    if (event.target.value === 'All') {
+        return getProperties (properties)
+      }
+    let newLocation = properties.filter(property => {
+        return property.location <= event.target.value
+    })
+    getProperties(newLocation)
+}
+document.querySelector('#property-location').addEventListener('change',locations);
+document.querySelector('#property-type').addEventListener('change',type);
