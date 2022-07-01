@@ -8,6 +8,7 @@ function tableData(prop) {
             <tr>
                 <td scope="row">${td.id}</td>
                 <td scope="row"><img src="${td.url}" alt="" width="100px" height="80px"></td>
+                <td scope="row">${td.forWhat}</td>
                 <td scope="row">${td.type}</td>
                 <td scope="row">${td.location}</td>
                 <td scope="row">${td.bed}</td>
@@ -33,6 +34,8 @@ function tableData(prop) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                <h6>Property up for</h6>
+                <input value="${td.forWhat}" id="pFor${index}">
                 <h6>Type of Property</h6>
                 <input value="${td.type}" id="pType${index}">
                 <h6>Type of Location</h6>
@@ -58,6 +61,7 @@ function tableData(prop) {
 tableData(properties);
 
 function addProperty(){
+    let pFor = document.getElementById('pFor');
     let pType = document.getElementById('pType');
     let pLocation = document.getElementById('pLocation');
     let pBeds = document.getElementById('pBeds');
@@ -66,6 +70,7 @@ function addProperty(){
     properties.push(
         {
             id: properties.length + 1,
+            forWhat: pFor.value,
             type: pType.value,
             location: pLocation.value,
             url: "null",
@@ -85,12 +90,14 @@ function edit(id) {
     // UPDATE
     console.log("Im being clicked");
     // variables for edited values
+    let pFor = document.getElementById(`pFor${id}`).value;
     let pType = document.getElementById(`pType${id}`).value;
     let pLocation = document.getElementById(`pLocation${id}`).value;
     let pBed = document.getElementById(`pBed${id}`).value;
     let pBathrooms = document.getElementById(`pBathrooms${id}`).value;
     let pPrice = document.getElementById(`pPrice${id}`).value;
     // passing edited values into array
+      properties[id].forWhat = pFor
       properties[id].type = pType
       properties[id].location = pLocation
       properties[id].bed = parseInt(pBed)

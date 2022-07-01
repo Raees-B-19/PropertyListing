@@ -51,7 +51,7 @@
 }
 #propertyListing-Title{
     text-align: center;
-    color: white;
+    color: black;
     padding: 6% 0 0 0;
 }
 #propertyListing-Title2{
@@ -61,11 +61,15 @@
 #properties-row{
     margin: 0 0 0 35px;
 }
+.btn{
+    color: white;
+    background: rgb(12 48 72);
+}
 .card{
     box-shadow: 1px 3px 10px 10px rgb(12 48 72);
 }
 .card-property-height{
-    height: 400px;
+    height: 450px;
     margin-bottom: 5px;
 }
 /* Agent Section */

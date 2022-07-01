@@ -1,7 +1,8 @@
 let properties = JSON.parse(localStorage.getItem('property')) ?
 JSON.parse(localStorage.getItem('property')) :
 localStorage.setItem('property',JSON.stringify([{
-        id: 1,
+    id: 1,
+    forWhat: 'Sale',    
         type: 'Apartment',
         location: 'Parrow',
         url: "https://i.postimg.cc/gjbnktg3/House-3.jpg",
@@ -15,6 +16,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 2,
+        forWhat: 'Sale',
         type: 'Apartment',
         location: 'Vanguard',
         url: "https://i.postimg.cc/dVDjrzVF/House-1.jpg",
@@ -27,6 +29,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 3,
+        forWhat: 'Sale',
         type: 'Apartment',
         location: 'Vanguard',
         url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
@@ -39,6 +42,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 4,
+        forWhat: 'Sale',
         type: 'Apartment',
         location: 'Seapoint',
         url: "https://i.postimg.cc/LXcZg88Y/House-5.png",
@@ -51,6 +55,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 5,
+        forWhat: 'Sale',
         type: 'House',
         location: 'Parrow',
         url: "https://i.postimg.cc/NF6BNJGf/House-2.jpg",
@@ -64,6 +69,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 6,
+        forWhat: 'Sale',
         type: 'House',
         location: 'Seapoint',
         url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
@@ -77,6 +83,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 7,
+        forWhat: 'Sale',
         type: 'House',
         location: 'Parrow',
         url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
@@ -89,6 +96,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 8,
+        forWhat: 'Sale',
         type: 'House',
         location: 'Crawford',
         url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
@@ -101,6 +109,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 9,
+        forWhat: 'Sale',
         type: 'House',
         location: 'Crawford',
         url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
@@ -113,6 +122,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 10,
+        forWhat: 'Sale',
         type: 'House',
         location: 'SilverTown',
         url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
@@ -125,6 +135,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 11,
+        forWhat: 'Sale',
         type: 'House',
         location: 'Crawford',
         url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
@@ -137,6 +148,7 @@ localStorage.setItem('property',JSON.stringify([{
     },
     {
         id: 12,
+        forWhat: 'Sale',
         type: 'House',
         location: 'Seapoint',
         url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
@@ -160,10 +172,11 @@ function getProperties(prop){
             <div class="card card-property-height" style="width: 18rem;">
             <img src="${property.url}" class="card-img-top" alt="...">
             <div class="card-body">
+                <h3 class="card-title">${property.forWhat}</h3>
               <h4 class="card-title">${property.type} in ${property.location}</h4>
               <h4 class="card-title"><i class="fa-solid fa-bed">${property.bed}</i><i class="fa-solid fa-bath">${property.bathrooms}</i></h4>
               <h5>R ${property.price}</h5>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${index}" onclick="modalProperties()">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal${index}" onclick="modalProperties()">
                 View Property
                </button>
             <div class="modal fade" id="exampleModal${index}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -203,7 +216,6 @@ function getProperties(prop){
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                     </div>
                 </div>
