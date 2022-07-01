@@ -257,6 +257,10 @@ document.querySelector('#property-toilets').addEventListener('change',toilet);
 document.querySelector('#property-rooms').addEventListener('change',room);
 document.querySelector('#property-budget').addEventListener('change',budget);
 
+document.getElementById('relaod-btn').addEventListener('click',() => {
+    window.location.reload()
+})
+
 
     // localStorage.setItem('property',JSON.stringify(property))
     // console.log(localStorage)
