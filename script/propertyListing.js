@@ -276,6 +276,10 @@ document.querySelector('#property-rooms').addEventListener('change',room);
 document.querySelector('#property-location').addEventListener('change',locations);
 document.querySelector('#property-budget').addEventListener('change',budget);
 
+// Footer
+const Year = new Date().getFullYear();
+document.getElementById('foot').innerHTML = `&copy copyright Ra'ees Benny ${Year}`
+
 
 
     // localStorage.setItem('property',JSON.stringify(property))

@@ -143,3 +143,7 @@ option{
     background: rgb(12 48 72);
     color: white;
 }
+#foot{
+    text-align: center;
+    padding: 20px;
+}
