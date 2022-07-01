@@ -111,6 +111,13 @@ option{
 #contact h2{
     text-align: center;
 }
+#name{
+    margin-left: 700px;
+}
+#name>input{
+    background: rgb(12 48 72);
+    color: white;
+}
 #email{
     margin-left: 700px;
 }
