@@ -4,7 +4,7 @@
 }
 /* Landing */
 #landing{
-    background-image: url(../image/background.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url(https://i.postimg.cc/SRR374jM/background.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
