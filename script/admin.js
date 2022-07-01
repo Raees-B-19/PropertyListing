@@ -34,15 +34,15 @@ function tableData() {
                     </div>
                     <div class="modal-body">
                     <h6>Type of Property</h6>
-                    <input value="${td.type}">
+                    <input value="${td.type}" id="pType">
                     <h6>Type of Location</h6>
-                    <input value="${td.location}">
+                    <input value="${td.location}" id="pLocation">
                     <h6>Amount of Beds</h6>
-                    <input value="${td.bed}">
+                    <input value="${td.bed}" id="pBed">
                     <h6>Amount of Toilets</h6>
-                    <input value="${td.toilet}">
+                    <input value="${td.toilet}" id="pToilet">
                     <h6>Property Price</h6>
-                    <input value="${td.price}">
+                    <input value="${td.price}" id="pPrice">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -57,11 +57,33 @@ function tableData() {
 }
 tableData();
 
-function edit() {
+function edit(id) {
     // const newProp = prompt('What would u change')
     // const task = properties.find((property) => property.id === id);
     // task.type = newProp
     // localStorage.setItem('property', JSON.stringify(properties));
+    // UPDATE
+    console.log("Im being clicked");
+    // variables for edited values
+    let etype = document.getElementById(`editType${id}`).value;
+    let elocation = document.getElementById(`editLocation${id}`).value;
+    let eaddress = document.getElementById(`editTitle${id}`).value;
+    let epicture = document.getElementById(`editPic${id}`).value;
+    let ebedrooms = document.getElementById(`editRooms${id}`).value;
+    let ebathrooms = document.getElementById(`editBath${id}`).value;
+    let egarage = document.getElementById(`editGarage${id}`).value;
+    let eprice = document.getElementById(`editPrice${id}`).value;
+    // passing edited values into array
+      properties[id].type = etype
+      properties[id].location = elocation
+      properties[id].address = eaddress
+      properties[id].picture = epicture
+      properties[id].bedrooms = parseInt(ebedrooms)
+      properties[id].bathrooms = parseInt(ebathrooms)
+      properties[id].garage = parseInt(egarage)
+      properties[id].price = parseInt(eprice)
+      localStorage.setItem("property", JSON.stringify(properties));
+    // Calling Function
     tableData();
 };
 
