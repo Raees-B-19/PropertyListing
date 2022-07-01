@@ -124,12 +124,12 @@ localStorage.setItem('property',JSON.stringify([{
         forWhat: 'Sale',
         type: 'House',
         location: 'SilverTown',
-        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+        url: "https://i.postimg.cc/N0kcz8Rf/House-4.jpg",
+        url1: "https://i.postimg.cc/0QKzSHLH/Lounge-2.jpg",
+        url2: "https://i.postimg.cc/tJVvLy8t/Room-1.jpg",
+        url3: "https://i.postimg.cc/52Xf7F2Z/Toilet-1.jpg",
         bed: 3,
-        bathrooms: 2,
+        bathrooms: 5,
         price:10000000
     },
     {
@@ -150,12 +150,12 @@ localStorage.setItem('property',JSON.stringify([{
         forWhat: 'Sale',
         type: 'House',
         location: 'Seapoint',
-        url: "https://i.postimg.cc/65Ms5MwD/Luxury-Apartment.jpg",
-        url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
-        url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
-        url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
-        bed: 3,
-        bathrooms: 2,
+        url: "https://i.postimg.cc/N0kcz8Rf/House-4.jpg",
+        url1: "https://i.postimg.cc/0QKzSHLH/Lounge-2.jpg",
+        url2: "https://i.postimg.cc/tJVvLy8t/Room-1.jpg",
+        url3: "https://i.postimg.cc/52Xf7F2Z/Toilet-1.jpg",
+        bed: 4,
+        bathrooms: 3,
         price:10000000
     }
 ]));
