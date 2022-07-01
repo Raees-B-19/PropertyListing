@@ -6,19 +6,19 @@ function tableData() {
     properties.forEach((td, index) => {
         tb.innerHTML += `
             <tr>
-                <td>${td.id}</td>
-                <td><img src="${td.url}" alt="" width="100px" height="80px"></td>
-                <td>${td.type}</td>
-                <td>${td.location}</td>
-                <td>${td.bed}</td>
-                <td>${td.bathroom}</td>
-                <td>${td.price}</td>
+                <td scope="row">${td.id}</td>
+                <td scope="row"><img src="${td.url}" alt="" width="100px" height="80px"></td>
+                <td scope="row">${td.type}</td>
+                <td scope="row">${td.location}</td>
+                <td scope="row">${td.bed}</td>
+                <td scope="row">${td.bathroom}</td>
+                <td scope="row">${td.price}</td>
                 <!-- Button trigger modal -->
-                <td>
+                <td scope="row">
                 <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal${index}">
                 <i class="bi bi-pencil-square"></i></td>
                 </a>
-                <td><i class="bi bi-trash" onclick="remove(${index})"></i></td>
+                <td scope="row"><i class="bi bi-trash" onclick="remove(${index})"></i></td>
                 </tr>
 
 
@@ -57,10 +57,6 @@ function tableData() {
 tableData();
 
 function edit(id) {
-    // const newProp = prompt('What would u change')
-    // const task = properties.find((property) => property.id === id);
-    // task.type = newProp
-    // localStorage.setItem('property', JSON.stringify(properties));
     // UPDATE
     console.log("Im being clicked");
     // variables for edited values
