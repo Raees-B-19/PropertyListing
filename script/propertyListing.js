@@ -1,4 +1,3 @@
-
 let properties = JSON.parse(localStorage.getItem('property')) ?
 JSON.parse(localStorage.getItem('property')) :
 localStorage.setItem('property',JSON.stringify([{
@@ -266,9 +265,6 @@ document.querySelector('#property-rooms').addEventListener('change',room);
 document.querySelector('#property-location').addEventListener('change',locations);
 document.querySelector('#property-budget').addEventListener('change',budget);
 
-document.getElementById('relaod-btn').addEventListener('click',() => {
-    window.location.reload()
-})
 
 
     // localStorage.setItem('property',JSON.stringify(property))

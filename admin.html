@@ -16,19 +16,62 @@
 </head>
 <body>
     <h1>Admin Table</h1>
-                <div>
-                <h3>Type</h3>
-                <select name="type" id="property-type">
-                  <option value="" disabled selected hidden>Type</option>
-                  <option value="All">All</option>
-                  <option value="Apartment">Apartment</option>
-                  <option value="House">House</option>
+    <ul>
+        <li>
+            <h3>Type</h3>
+            <select name="type" id="property-type">
+                <option value="" disabled selected hidden>Type</option>
+                <option value="All">All</option>
+                <option value="Apartment">Apartment</option>
+                <option value="House">House</option>
+            </select>
+        </li>
+        <li>
+            <h3>Location</h3>
+            <select name="rooms" id="property-location">
+                <option value="" disabled selected hidden>Location</option>
+                <option value="All">All</option>
+                <option value="Crawford">Crawford</option>
+                <option value="Parrow">Parrow</option>
+                <option value="Vanguard">Vanguard</option>
+                <option value="Seapoint">Seapoint</option>
+                <option value="SilverTown">SilverTown</option>
+                <option value="Seapoint">Seapoint</option>
+            </select>
+        </li>
+        <li>
+            Add property
+            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-solid fa-plus"></i>
+            </a>
+        </li>
+        <li>
+            <h2>Property List (click house)
+                <a href="./index.html" id="property-link">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </a>
+            </h2>
+        </li>
+    </ul>
+                           
+    <!-- Modal for Add Property -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Property</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Type of Property</h6>
+                <select name="pType" id="pType">
+                    <option value="" disabled selected hidden>Property Type</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="House">House</option>
                 </select>
-                </div>
-                <h3>Location</h3>
-                <select name="rooms" id="property-location">
+                <h6>Type of Location</h6>
+                <select name="pLocation" id="pLocation">
                     <option value="" disabled selected hidden>Location</option>
-                    <option value="All">All</option>
                     <option value="Crawford">Crawford</option>
                     <option value="Parrow">Parrow</option>
                     <option value="Vanguard">Vanguard</option>
@@ -36,68 +79,38 @@
                     <option value="SilverTown">SilverTown</option>
                     <option value="Seapoint">Seapoint</option>
                 </select>
-                    Add property
-                    <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-plus"></i>
-                    </a>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Add Property</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <h6>Type of Property</h6>
-                                <select name="pType" id="pType">
-                                    <option value="" disabled selected hidden>Property Type</option>
-                                    <option value="Apartment">Apartment</option>
-                                    <option value="House">House</option>
-                                </select>
-                                <h6>Type of Location</h6>
-                                <select name="pLocation" id="pLocation">
-                                    <option value="" disabled selected hidden>Location</option>
-                                    <option value="Crawford">Crawford</option>
-                                    <option value="Parrow">Parrow</option>
-                                    <option value="Vanguard">Vanguard</option>
-                                    <option value="Seapoint">Seapoint</option>
-                                    <option value="SilverTown">SilverTown</option>
-                                    <option value="Seapoint">Seapoint</option>
-                                </select>
-                                <h6>Amount of Beds</h6>
-                                <select name="pBeds" id="pBeds">
-                                    <option value="" disabled selected hidden>Amount of Beds</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                                <h6>Amount of Bathrooms</h6>
-                                <select name="pBathrooms" id="pBathrooms">
-                                    <option value="" disabled selected hidden>Amount of Bathrooms</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                                <h6>Property Price</h6>
-                                <input type="number" placeholder="Max Price R10000000" id="pPrice">
+                <h6>Amount of Beds</h6>
+                <select name="pBeds" id="pBeds">
+                    <option value="" disabled selected hidden>Amount of Beds</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <h6>Amount of Bathrooms</h6>
+                <select name="pBathrooms" id="pBathrooms">
+                    <option value="" disabled selected hidden>Amount of Bathrooms</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <h6>Property Price</h6>
+                <input type="number" placeholder="Max Price R10000000" id="pPrice">
 
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary" onclick="addProperty()">Save changes</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-    <h2>Property List (click house)
-        <a href="./index.html" id="property-link">
-            <i class="fa-solid fa-house-chimney"></i>
-        </a>
-    </h2>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="addProperty()">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- End of Modal -->
+
+        <!-- Table of Admin -->
     <table>
         <thead>
             <tr>

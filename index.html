@@ -56,12 +56,12 @@
                 Welcome to RB's Property
                 Dark blue and Cream color
             </h1>
-            <p class="landing-desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <p  class="landing-desc">
-                Est sapiente facilis quibusdam quae quo dolor
-            </p>
+            <h2 class="landing-desc">
+                We Sell and Rent Properties
+            </h2>
+            <h3  class="landing-desc">
+              Please reload if Properties not showing due to Local Storage. Thank you for understanding.
+            </h3>
         </div>
         <div id="landing-filter">
           <div class="container">
@@ -115,7 +115,6 @@
                   <button id="admin-btn" class="col-md-2">
                     <a href="./admin.html" target="_blank">Admin Page</a>
                   </button>
-                  <button id="relaod-btn">Reload if Properties Not Showing</button>
                   <!-- <button id="search-btn" class="col-md-2">Search</button> -->
             </div>
           </div>
@@ -191,11 +190,18 @@
     <!-- Footer -->
     <section id="footer">
       <h2>Contact Us</h2>
-      <ul>
-        <li>Address</li>
-        <li>Phne NUmber</li>
-        <li>Email</li>
-      </ul>
+      <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword">
+        </div>
+      </div>
       <form action="">
         <input type="text">
         <button>Submit</button>

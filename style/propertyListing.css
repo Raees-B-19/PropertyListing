@@ -11,21 +11,21 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 70vh;
-    width: 100%;
+    /* width: 100vw; */ 
 }
 #landing-container{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     padding-top:10%;
 }
 #landing-Title{
     color: white;
+    padding: 0 0 1% 0 ;
 }
 .landing-desc{
     color: white;
     font-size: 30px;
+    padding: 0 0 1% 0 ;
+
 }
 /* Filter */
 #landing-filter{
@@ -49,10 +49,12 @@
 
 /* Property Listing Section */
 #propertyListing-Title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8%;
+    text-align: center;
+    padding: 6% 0 0 0;
+}
+#propertyListing-Title2{
+    text-align: center;
+    padding: 2% 0 0 0;
 }
 #properties-row{
     margin: 0 0 0 35px;
