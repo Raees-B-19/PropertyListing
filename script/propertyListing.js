@@ -220,6 +220,9 @@ getProperties(properties);
 // For  ToiletSearch
 function toilet(event){
     // console.log(properties);
+    if (event.target.value === 'All') {
+        return getProperties (properties)
+      }
     let newToilets = properties.filter(property => {
         return property.toilet <= event.target.value
     })
@@ -229,6 +232,9 @@ function toilet(event){
 // For Room Search
 function room(event){
     // console.log(properties);
+    if (event.target.value === 'All') {
+        return getProperties (properties)
+      }
     let newRooms = properties.filter(property => {
         return property.bed <= event.target.value
     })
@@ -238,6 +244,9 @@ function room(event){
 // For Buget Search
 function budget(event){
     // console.log(properties);
+    if (event.target.value === 'All') {
+        return getProperties (properties)
+      }
     let newBudget = properties.filter(property => {
         return property.price == event.target.value
     })
