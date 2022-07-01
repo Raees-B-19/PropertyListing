@@ -57,6 +57,30 @@ function tableData(prop) {
 }
 tableData(properties);
 
+function addProperty(){
+    let pType = document.getElementById('pType');
+    let pLocation = document.getElementById('pLocation');
+    let pBeds = document.getElementById('pBeds');
+    let pBathrooms = document.getElementById('pBathrooms');
+    let pPrice= document.getElementById('pPrice');
+    properties.push(
+        {
+            id: properties.length + 1,
+            type: pType.value,
+            location: pLocation.value,
+            url: "null",
+            url1: "https://i.postimg.cc/Qdmv2zzB/Set1-4.jpg",
+            url2: "https://i.postimg.cc/W4Q8C6sF/Set1-2.jpg",
+            url3: "https://i.postimg.cc/pdzqjWh5/Ser1-4.jpg",
+            bed: parseInt(pBeds.value),
+            bathrooms: parseInt(pBathrooms.value),
+            price:parseInt(pPrice.value)
+        }
+    )
+    localStorage.setItem('property',JSON.stringify(properties))
+    tableData(properties)
+}
+
 function edit(id) {
     // UPDATE
     console.log("Im being clicked");
@@ -75,7 +99,7 @@ function edit(id) {
     //   Save it to localStorage
       localStorage.setItem('property', JSON.stringify(properties));
     // Calling Function
-    tableData();
+    tableData(properties);
 };
 
 function remove(id) {
@@ -87,7 +111,7 @@ function remove(id) {
     for (i = 0; i < properties.length; i++) {
         properties[i].id = i + 1;
     }
-    tableData();
+    tableData(properties);
 };
 
 // For Type Search
