@@ -244,7 +244,7 @@ function toilet(event){
         return getProperties (properties)
       }
     let newToilets = properties.filter(property => {
-        return property.toilet <= event.target.value
+        return property.bathrooms <= event.target.value
     })
     getProperties(newToilets)
 }
