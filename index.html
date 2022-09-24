@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property Listing</title>
-    <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/cd276ef900.js" crossorigin="anonymous"></script>
-        <!-- My Css -->
-    <link rel="stylesheet" href="./style/propertyListing.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Listing</title>
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/cd276ef900.js" crossorigin="anonymous"></script>
+  <!-- My Css -->
+  <link rel="stylesheet" href="./style/propertyListing.css">
 
 </head>
+
 <body>
-    <!-- Navigation -->
-    <!-- <section id="nav">
+  <!-- Navigation -->
+  <!-- <section id="nav">
         <nav class="navbar navbar-expand-lg bg-">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Navbar</a>
@@ -49,92 +51,91 @@
           </nav>
     </section> -->
 
-    <!-- Landing -->
-    <section id="landing">
-        <div id="landing-container">
-            <h1 id="landing-Title">
-                Welcome to RB's Property
-                Dark blue and Cream color
-            </h1>
-            <h2 class="landing-desc">
-                We Sell and Rent Properties
-            </h2>
-            <h3  class="landing-desc">
-              Please reload Twice if Properties not showing due to Local Storage. Thank you for understanding.
+  <!-- Landing -->
+  <section id="landing">
+    <div id="landing-container">
+      <h1 id="landing-Title">
+        Welcome to RB's Property
+      </h1>
+      <h2 class="landing-desc">
+        We Sell and Rent Properties
+      </h2>
+      <h3 class="landing-desc">
+        Please reload Twice if Properties not showing due to Local Storage. Thank you for understanding.
+      </h3>
+    </div>
+    <div id="landing-filter">
+      <div class="container justify-content-center">
+        <div class="row mx-auto">
+          <div class="col property-rooms">
+            <h3>Rooms</h3>
+            <select name="rooms" id="property-rooms">
+              <option value="" disabled selected hidden>Rooms</option>
+              <option value="All">All</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="col property-toilets">
+            <h3>Bathrooms</h3>
+            <select name="toilets" id="property-toilets">
+              <option value="" disabled selected hidden>Bathrooms</option>
+              <option value="All">All</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="col property-location">
+            <h3>Location</h3>
+            <select name="rooms" id="property-location">
+              <option value="" disabled selected hidden>Location</option>
+              <option value="All">All</option>
+              <option value="Crawford">Crawford</option>
+              <option value="Parrow">Parrow</option>
+              <option value="Vanguard">Vanguard</option>
+              <option value="Seapoint">Seapoint</option>
+              <option value="SilverTown">SilverTown</option>
+              <option value="Seapoint">Seapoint</option>
+            </select>
+          </div>
+          <div class="col property-budget">
+            <h3>Budget</h3>
+            <select name="rooms" id="property-budget">
+              <option value="" disabled selected hidden>Budget</option>
+              <option value="All">All</option>
+              <option value="15000">R15000</option>
+              <option value="70000">R70000</option>
+              <option value="10000000">R10000000</option>
+              <option value="100000000">R100000000</option>
+            </select>
+          </div>
+          <div class="col admin-btn">
+            <h3>Admin Page
+              <a href="./admin.html" target="_blank">
+                <i class="fa-solid fa-file"></i>
+              </a>
             </h3>
-        </div>
-        <div id="landing-filter">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-2 property-rooms">
-                <h3>Rooms</h3>
-              <select name="rooms" id="property-rooms">
-                  <option value="" disabled selected hidden>Rooms</option>
-                  <option value="All">All</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-              </select>
-              </div>
-                <div class="col-md-2 property-toilets">
-                  <h3>Bathrooms</h3>
-                <select name="toilets" id="property-toilets">
-                    <option value="" disabled selected hidden>Bathrooms</option>
-                    <option value="All">All</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
-                </div>
-                <div class="col-md-2 property-location">
-                  <h3>Location</h3>
-                <select name="rooms" id="property-location">
-                    <option value="" disabled selected hidden>Location</option>
-                    <option value="All">All</option>
-                    <option value="Crawford">Crawford</option>
-                    <option value="Parrow">Parrow</option>
-                    <option value="Vanguard">Vanguard</option>
-                    <option value="Seapoint">Seapoint</option>
-                    <option value="SilverTown">SilverTown</option>
-                    <option value="Seapoint">Seapoint</option>
-                </select>
-                </div>
-                <div class="col-md-2 property-budget">
-                  <h3>Budget</h3>
-                <select name="rooms" id="property-budget">
-                  <option value="" disabled selected hidden>Budget</option>
-                  <option value="All">All</option>
-                  <option value="15000">R15000</option>
-                  <option value="70000">R70000</option>
-                  <option value="10000000">R10000000</option>
-                  <option value="100000000">R100000000</option>
-                </select>
-                </div>
-                  <div class="col-md-2 admin-btn">
-                    <h3>Admin Page
-                    <a href="./admin.html" target="_blank">
-                      <i class="fa-solid fa-file"></i>
-                    </a>
-                    </h3>
-                  </div>
-                  <!-- <button id="search-btn" class="col-md-2">Search</button> -->
-            </div>
           </div>
+          <!-- <button id="search-btn" class="col-md-2">Search</button> -->
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Property Listing -->
-    <section id="propertyListing">
-        <h2 id="propertyListing-Title">Properties available</h2>
-          <div class="row" id="properties-row">
+  <!-- Property Listing -->
+  <section id="propertyListing">
+    <h2 id="propertyListing-Title">Properties available</h2>
+    <div class="row mx-auto" id="properties-row">
 
-          </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Agent Reviews -->
-    <section id="agent">
+  <!-- Agent Reviews -->
+  <!-- <section id="agent">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -146,7 +147,7 @@
           <div class="card-body">
             <h5 class="card-title">Jack</h5>
             <p class="card-text">We always and consistent to put our clients best interests first.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
           </div>
@@ -156,7 +157,7 @@
           <div class="card-body">
             <h5 class="card-title">Harley</h5>
             <p class="card-text">Real estate is my life. If the clients are happy then I am to.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
           </div>
@@ -166,7 +167,7 @@
           <div class="card-body">
             <h5 class="card-title">Steve</h5>
             <p class="card-text">We give sevices which cannot be bought or measured with money.This is our sincerity and integrity</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
           </div>
@@ -176,44 +177,69 @@
           <div class="card-body">
             <h5 class="card-title">Bradon</h5>
             <p class="card-text">We introduce people to houses unitl they find the one they are looking for.</p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
           </div>
         </div>
       </div>
-    </section>
-      
-    <!-- Contact -->
-    <section id="contact">
-      <form action="https://formspree.io/f/xyyoarld" method="POST" target="_blank">
-        <h2>Contact Us</h2>
-        <div id="name">
+    </section> -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xyyoarld" method="POST" target="_blank">
+      <div class="container">
+        <div class="row mx-auto">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <center><label for="exampleInputEmail1">Email address</label></center>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="email@gmail.com">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <center><label for="exampleInputName1">FullName</label></center>
+              <input type="name" name="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp"
+                placeholder="Enter Fullname">
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4 justify-content-center">
+            <div class="form-group mb-3">
+              <center><label for="exampleFormControlTextarea1">Want to know more?</label></center>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <center><button type="submit" class="btn btn-primary mb-2" id="submit">Submit</button></center>
+      </div>
+      <!-- <div id="name">
         <label for="name">Name:</label>
         <input type="text" name="name" placeholder="Steve" required>
         </div>
         <div id="email">
         <label for="email">Email :</label>
-        <input type="text" name="email" placeholder="email@gmail.com" required>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Give us Feedback</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" id="Submit">Submit</button>
-      </form>
-    </section>
+        <input type="text" name="email"  required>
+        </div> -->
+    </form>
+  </section>
 
-    <!-- Footer -->
-    <section id="footer">
-      <div id="foot">
-          &copy CopyRight Ra'ees Benny new Data()
-      </div>
-    </section>
+  <!-- Footer -->
+  <section id="footer">
+    <div id="foot">
+      &copy CopyRight Ra'ees Benny new Data()
+    </div>
+  </section>
 
-    <!-- Bootstrap Js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- My Js -->
-    <script src="./script/propertyListing.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- My Js -->
+  <script src="./script/propertyListing.js"></script>
 </body>
+
 </html>

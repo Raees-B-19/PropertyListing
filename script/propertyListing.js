@@ -4,7 +4,7 @@ localStorage.setItem('property',JSON.stringify([{
         id: 1,
         forWhat: 'Rent',    
         type: 'Apartment',
-        location: 'Parrow',
+        location: 'Parow',
         url: "https://i.postimg.cc/MGrVkB7V/Apartment-1.jpg",
         url1: "https://i.postimg.cc/L8D01ySS/Room-5.jpg",
         url2: "https://i.postimg.cc/0NJ2QJgp/Room-4.jpg",
@@ -56,7 +56,7 @@ localStorage.setItem('property',JSON.stringify([{
         id: 5,
         forWhat: 'Sale',
         type: 'House',
-        location: 'Parrow',
+        location: 'Parow',
         url: "https://i.postimg.cc/W11xXRXz/House-1.jpg",
         url1: "https://i.postimg.cc/jjJgFRNx/Lounge-5.jpg",
         url2: "https://i.postimg.cc/BbhBvzD7/Room-6.jpg",
@@ -84,7 +84,7 @@ localStorage.setItem('property',JSON.stringify([{
         id: 7,
         forWhat: 'Sale',
         type: 'House',
-        location: 'Parrow',
+        location: 'Parow',
         url: "https://i.postimg.cc/W11xXRXz/House-1.jpg",
         url1: "https://i.postimg.cc/jjJgFRNx/Lounge-5.jpg",
         url2: "https://i.postimg.cc/BbhBvzD7/Room-6.jpg",
@@ -167,7 +167,7 @@ function getProperties(prop){
     prop.forEach((property,index) => {
         document.getElementById('properties-row').innerHTML +=
             `
-            <div class="col-md-3 p-3">
+            <div class="col-md-3 p-4">
             <div class="card card-property-height">
             <img src="${property.url}" class="card-img-top" alt="...">
             <div class="card-body">
