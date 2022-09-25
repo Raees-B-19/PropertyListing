@@ -148,6 +148,19 @@ option{
     text-align: center;
     padding: 20px;
 }
+.bcontact{
+    border: 3px solid rgb(12 48 72);
+}
+.bcontact:focus{
+    border: 3px solid rgb(12 48 72);
+}
+.bcontact:focus::placeholder{
+    transition: 0.4s ease-in-out;
+    color: transparent;
+}
+.bcontact::placeholder{
+    transition: 0.4s ease-in-out;
+}
 @media screen and (min-width:1023px) and (max-width:1025px) {
     #properties-row {
         margin: 0 0 0 0px;
