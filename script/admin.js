@@ -128,7 +128,7 @@ function type(event){
         return tableData(properties)
       }
     let newType = properties.filter(property => {
-        return property.type <= event.target.value
+        return property.type == event.target.value
     })
     tableData(newType)
 }
@@ -139,7 +139,7 @@ function price(event){
         return tableData (properties)
       }
     let newPrice = properties.filter(property => {
-        return property.price <= event.target.value
+        return property.price == event.target.value
     })
     tableData(newPrice)
 }
