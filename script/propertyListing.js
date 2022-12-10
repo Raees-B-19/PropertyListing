@@ -233,7 +233,7 @@ function room(event){
         return getProperties (properties)
       }
     let newRooms = properties.filter(property => {
-        return property.bed <= event.target.value
+        return property.bed == event.target.value
     })
     getProperties(newRooms)
 }
@@ -244,7 +244,7 @@ function toilet(event){
         return getProperties (properties)
       }
     let newToilets = properties.filter(property => {
-        return property.bathrooms <= event.target.value
+        return property.bathrooms == event.target.value
     })
     getProperties(newToilets)
 }
@@ -255,7 +255,7 @@ function locations(event){
         return getProperties (properties)
       }
     let newLocation = properties.filter(property => {
-        return property.location <= event.target.value
+        return property.location == event.target.value
     })
     getProperties(newLocation)
 }
